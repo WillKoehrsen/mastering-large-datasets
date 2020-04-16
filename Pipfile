@@ -10,6 +10,7 @@ toolz = "*"
 pathos = "*"
 mrjob = "*"
 ipython = "*"
+pyspark = "*"
 
 [requires]
 python_version = "3.7"
