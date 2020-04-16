@@ -9,6 +9,7 @@ verify_ssl = true
 toolz = "*"
 pathos = "*"
 mrjob = "*"
+ipython = "*"
 
 [requires]
 python_version = "3.7"
