@@ -64,7 +64,7 @@ def pages_to_edges(wiki_linked_pages):
 
 if __name__ == "__main__":
     title = "Freeman_Dyson"
-    page_number_limit = 15
+    page_number_limit = 50
     # Retrieve the pages associated with the central page
     # These are first degree pages
     root_linked_pages = get_wiki_linked_pages(
@@ -90,4 +90,6 @@ if __name__ == "__main__":
         graph.add_edge(*edge)
 
     # Write in gexf format for Gephi
-    nx.readwrite.gexf.write_gexf(graph, f"./{title}_wiki_graph.gexf")
+    nx.readwrite.gexf.write_gexf(
+        graph, f"./{title}-{page_number_limit}_links_wiki_graph.gexf"
+    )
