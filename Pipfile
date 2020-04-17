@@ -12,6 +12,7 @@ mrjob = "*"
 ipython = "*"
 pyspark = "*"
 requests = "*"
+networkx = "*"
 
 [requires]
 python_version = "3.7"
